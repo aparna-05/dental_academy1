@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Educenter</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <!-- preloader start -->
+  <div class="preloader">
+    <img src="images/preloader.gif" alt="preloader">
+  </div>
+  <!-- preloader end -->
+
+<!-- header -->
+<header class="fixed-top header">
+  <!-- top header -->
+  <div class="top-header py-2 bg-white">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-4 text-center text-lg-left">
+          <a class="text-color mr-3" href="callto:+443003030266"><strong>CALL</strong> +44 300 303 0266</a>
+          <ul class="list-inline d-inline">
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-facebook"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-linkedin"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-instagram"></i></a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- navbar -->
+  <div class="navigation w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light p-0">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item @@about">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item @@courses">
+              <a class="nav-link" href="courses.html">COURSES</a>
+            </li>
+            <li class="nav-item @@events">
+              <a class="nav-link" href="events.html">TEAM</a>
+            </li>
+            <li class="nav-item @@blog">
+              <a class="nav-link" href="blog.html">CONTACT-US</a>
+            </li>
+         
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- /header -->
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Register</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login">
+                  <form action="/action_page.php" style="border:1px solid #ccc"> 
+                    <div class="container"> 
+                        <label><b>Name</b></label> 
+                        <input type="text" placeholder="Enter name" name="name" required> 
+                         
+                        <label><b>Phone No.</b></label> 
+                        <input type="text" placeholder="Enter number" name="phone" required> 
+            
+                        <label><b>Email</b></label> 
+                        <input type="text" placeholder="Enter Email" name="email" required> 
+              
+                        <label><b>Qualification</b></label> 
+                        <input type="password"  name="qualifi" required> 
+              
+                        <label><b>Additional info</b></label> <br>
+                
+                        <textarea rows="4" cols="180" ></textarea>
+                       
+                        <p>To create an account you have to agree our <a href="#">Terms & Privacy</a>.</p> 
+              
+                        <div class="clearfix"> 
+                            <button type="button" class="cancelbtn">Cancel</button> 
+                            <button type="submit" class="signupbtn">Sign Up</button> 
+                        </div> 
+                    </div> 
+                </form> 
+              
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- page title -->
+<section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="courses.html">Our Courses</a></li>
+          <li class="list-inline-item text-white h3 font-secondary nasted">General Dentistry Course</li>
+        </ul>
+        <p class="text-lighten">Our courses offer a good compromise between the continuous assessment favoured by some universities and the emphasis placed on final exams by others.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- section -->
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mb-4">
+        <!-- course thumb -->
+        <img src="images/courses/course-single.jpg" class="img-fluid w-100">
+      </div>
+    </div>
+    <!-- course info -->
+    <div class="row align-items-center mb-5">
+      <div class="col-xl-3 order-1 col-sm-6 mb-4 mb-xl-0">
+        <h2>General Dentistry Course</h2>
+      </div>
+      <div class="col-xl-6 order-sm-3 order-xl-2 col-12 order-2">
+        <ul class="list-inline text-xl-center">
+          <li class="list-inline-item mr-4 mb-3 mb-sm-0">
+            <div class="d-flex align-items-center">
+              <i class="ti-book text-primary icon-md mr-2"></i>
+              <div class="text-left">
+                <h6 class="mb-0">COURSES</h6>
+                <p class="mb-0">8 contact days</p>
+              </div>
+            </div>
+          </li>
+          <li class="list-inline-item mr-4 mb-3 mb-sm-0">
+            <div class="d-flex align-items-center">
+              <i class="ti-alarm-clock text-primary icon-md mr-2"></i>
+              <div class="text-left">
+                <h6 class="mb-0">DURATION</h6>
+                <p class="mb-0">2 days a week</p>
+              </div>
+            </div>
+          </li>
+          <li class="list-inline-item mr-4 mb-3 mb-sm-0">
+            <div class="d-flex align-items-center">
+              <i class="ti-wallet text-primary icon-md mr-2"></i>
+              <div class="text-left">
+                <h6 class="mb-0">FEE</h6>
+                <p class="mb-0">From: </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xl-3 text-sm-right text-left order-sm-2 order-3 order-xl-3 col-sm-6 mb-4 mb-xl-0">
+        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Book now</a>
+      </div>
+      <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">close</h4>
+        </div>
+        <div class="modal-body">
+          <h2 style=text-align:center>Booking Form</h2> 
+    
+    <form action="/action_page.php" style="border:1px solid #ccc"> 
+        <div class="container"> 
+            <label><b>Name</b></label> 
+            <input type="text" placeholder="Enter name" name="name" required> 
+             
+            <label><b>Phone No.</b></label> 
+            <input type="text" placeholder="Enter number" name="phone" required> 
+
+            <label><b>Email</b></label> 
+            <input type="text" placeholder="Enter Email" name="email" required> 
+  
+            <label><b>Qualification</b></label> 
+            <input type="password"  name="qualifi" required> 
+  
+            <label><b>Additional info</b></label> <br>
+    
+            <textarea rows="4" cols="50" ></textarea>
+           
+            <p>To create an account you have to agree our <a href="#">Terms & Privacy</a>.</p> 
+  
+            <div class="clearfix"> 
+                <button type="button" class="cancelbtn">Cancel</button> 
+                <button type="submit" class="signupbtn">Sign Up</button> 
+            </div> 
+        </div> 
+    </form> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+      <!-- border -->
+      <div class="col-12 mt-4 order-4">
+        <div class="border-bottom border-primary"></div>
+      </div>
+    </div>
+    <!-- course details -->
+    <div class="row">
+      <div class="col-12 mb-4">
+        <h3>About Course</h3>
+        <h4> Conservative & Endodontics Course Detail</h4>
+        <p>
+            1. Root canal treatment<br>
+            ◦ Anterior and posterior teeth<br>
+            2. Restorations<br>
+            ◦ Composite for anterior teeth<br>
+            ◦ Composite for posterior teeth<br>
+            ◦ Post endo restoration<br>
+            3. Trouble shooting and perforation repairs<br>
+            4. Single sitting RCT<br>
+            5. Rotary Endo<br>
+            6. Use of hand protapers<br>
+            7. Treatment of RCT failed teeth<br>
+            8. Apicoectomy</p>
+            
+           <h5>Esthetic Dentistry Course</h5> 
+            <p> 
+            1. Fabrication of Bleaching Trays<br>
+            2. Bleaching – Office Bleach<br>
+            ◦ Home Bleach<br>
+            3. Post and Core<br>
+            4. Laminates – Composite / Ceramic<br>
+            5. Light Cure Composite<br>
+            6. Esthetic Splinting<br>
+            7. Midline Diestema Closure<br>
+            8. Smile Enhancement</p>
+            <h5>IMPLANTALOGY:</h5> 
+           <p> Objectives:<br>
+            Upon successful completion of the course, the participants will be able to:<br>
+            • Incorporate Implantology in their practice<br>
+            • Develop a dental implant treatment plan<br>
+            • Select and place optimal Implant type on surgical site<br>
+            • Manage complications</p>
+            <h4> MODULE 1</h4>
+            <h5>DAY 1</h5><p>
+            1) Rationale and scope of dental implants<br>
+            2) Anatomy and Physiology relevant to implants<br>
+            3) Biomaterials and Osseointegration<br>
+            4) Selection of implant<br>
+            5) Implant Designs & Systems<br>
+            7) Radiographic interpretations and modern radiological technique</p>
+            <h5> DAY 2</h5>
+            1) Pre-prosthetic surgery considerations<br>
+            2) Prosthetic components and options for treatment.<br>
+            3) Biomechanics and occlusal considerations for implant prosthodontics.<br>
+            4) Hard and soft tissue management (Bone grafts and Perio esthetics)<br>
+            5) Armamentarium for implant surgery<br>
+            HANDS-ON: Candidates will place implants on jaw models.</p>
+            
+            <h4> MODULE 2</h4>
+           <h5> DAY 1</h5>
+           <p>
+            1) Medical considerations<br>
+            2) Infection control and operating room protocol<br>
+            LIVE SURGERIES<br>
+            Case discussion and questionnaire<br>
+            3) Case presentation<br>
+            HANDS-ON: Understanding CBCT and Implant planning using CBCT Software</p>
+            
+           <h5>DAY 2</h5>
+           <p> 1) Types of impression procedure<br>
+            2) LIVE DEMO of stage 2 surgery<br>
+            3) LIVE DEMO of various impression techniques<br>
+            4) Clinical lab procedures<br>
+            5) Overdenture demo<br>
+            6) Provitionalisation and cementation<br>
+            7) Prosthetic options for complete denture patients<br>
+            8) Hybrid dentures<br>
+            DEMO CUM HANDS-ON various impression techniques on Models</p>
+            
+            <p>  MODULE 3<br>
+            Case Presentations by Participants<br>
+            Each participant will place 2 implants on patient<br>
+            Take home tips for Implant practice<br>
+            Highlights:<br>
+            Six-day course (3 weekends) without affecting your busy practice schedules
+            Intensive learning, focused group discussions and case presentations
+            Opportunity to place implants on patients
+            Ongoing mentoring by Faculties</p>
+            
+           <h5> BASIC LASER COURSE:</h5>
+            <h5> Day one</h5>
+             <p> • Introduction and rationale for lasers<br>
+            • Types of lasers<br>
+            • Clinical application of lasers<br>
+            • Laser system introduction<br>
+            • Diode Laser physics<br>
+            • Clinical application of diode laser in dentistry<br>
+            • Demonstration cum hands on session:<br>
+            • Hands on demo and training of lasers.</p>
+          <h5>  Day Two</h5>
+            <p>  Live Demonstration on the patients<br>
+            • Depigmentation Case<br>
+            • Frenectomy Case<br>
+            • Flap Surgery<br>
+            Lectures:<br>
+            • Teeth Bleaching & lasers<br>
+            • Case gallery and discussion<br>
+            • Laser safety<br>
+            • Integrating lasers in your practice<br>
+            • Overview of hard tissue laser<br>
+            • Applications of hard tissue laser</p>
+          
+      </div>
+      <div class="col-12 mb-4">
+        <h3 class="mb-3">Requirements</h3>
+        <div class="col-12 px-0">
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="list-styled">
+                <li>Participation limited to a maximum of 6 doctors, confirm your participation at the earliest</li>
+                <li>The Course will comprise of lecture and model Hands on followed by participants getting to work on patients under the supervision of course co-ordinators.</li>
+                <li>Each Participant will be allowed to observe the working of a private practice as part of clinical staff and will be allowed to work on patients to gain confidence.</li>
+                <li>All the materials will be provided by Dental Connect without any additional price.</li>
+                <li>Participants need to bring an Airoter hand piece and Apron.</li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mb-4">
+        <h3 class="mb-3">How to Apply</h3>
+        <ul class="list-styled">
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae obcaecati unde nulla? Lorem, ipsum
+            dolor. Lorem, ipsum.</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae obcaecati unde nulla? Lorem, ipsum
+            dolor. Lorem, ipsum.</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae obcaecati unde nulla? Lorem, ipsum
+            dolor. Lorem, ipsum.</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae obcaecati unde nulla? Lorem, ipsum
+            dolor. Lorem, ipsum.</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae obcaecati unde nulla? Lorem, ipsum
+            dolor. Lorem, ipsum.</li>
+        </ul>
+      </div>
+      <div class="col-12 mb-5">
+        <h3>Fees and Funding</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+          laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+          dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+          consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+          ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+          labore et dolore magnam aliquam quaerat voluptatem.</p>
+      </div>
+      <!-- teacher -->
+      <div class="col-12">
+        <h5 class="mb-3">Teacher</h5>
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+          <div class="media mb-2 mb-sm-0">
+            <img class="mr-4 img-fluid" src="images/teacher.jpg" alt="Teacher">
+            <div class="media-body">
+              <h4 class="mt-0">Sam Somrat</h4>
+              Photographer
+            </div>
+          </div>
+          <div class="social-link">
+            <h6 class="d-none d-sm-block">Social Link</h6>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="d-inline-block text-light p-1" href="#"><i class="ti-facebook"></i></a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light p-1" href="#"><i class="ti-twitter-alt"></i></a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light p-1" href="#"><i class="ti-linkedin"></i></a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light p-1" href="#"><i class="ti-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-bottom border-primary mt-4"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /section -->
+
+<!-- related course -->
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">Related Course</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <!-- course item -->
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <div class="card p-0 border-primary rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="images/courses/course-6.jpg" alt="course thumb">
+          <div class="card-body">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>Course duration:2 days </li>
+              
+            </ul>
+            <a href="course-single6.html">
+              <h4 class="card-title">Dental Practice Management Boot Camp</h4>
+            </a>
+            <p class="card-text mb-4"> Two days Intensive Course
+              Designed to expand the participant’s knowledge and confidence in Dental practice in following areas</p>
+            <a href="course-single6.html" class="btn btn-primary btn-sm">Apply now</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- course item -->
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <div class="card p-0 border-primary rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="images/courses/course-1.jpg" alt="course thumb">
+          <div class="card-body">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>Course duration:Total of 4 contact days distributed over 2 weeks.</li>
+              
+            </ul>
+            <a href="course-single7.html">
+              <h4 class="card-title">Laser Dentistry Basics</h4>
+            </a>
+            <p class="card-text mb-4">  ● Introduction and rationale for lasers<br>
+              ● Live Demonstration on the patients<br>
+              ● Lectures and Discussion.
+             </p>
+            <a href="course-single7.html" class="btn btn-primary btn-sm">Apply now</a>
+          </div>
+        </div>
+      </div>
+      <!-- course item -->
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <div class="card p-0 border-primary rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="images/courses/course-2.jpg" alt="course thumb">
+          <div class="card-body">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>Course duration:100 hrs distributed over 6 months</li>
+              
+            </ul>
+            <a href="course-single8.html">
+              <h4 class="card-title">Comprehensive Implantolody</h4>
+            </a>
+            <p class="card-text mb-4"> ● To familiarize the clinician with various components used in clinical sequence during completion of the rehabilitation.<br>
+              ● To optimize usage of Prosthetic options available in the product line of the particular company<br>
+              ● To enable a foolproof treatment plan to be made at the commencement of each case</p>
+            <a href="course-single8.html" class="btn btn-primary btn-sm">Apply now</a>
+          </div>
+        </div>
+      </div>
+</section>
+<!-- /related course -->
+
+<!-- footer -->
+<footer>
+  <!-- newsletter -->
+  <div class="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
+          <h3 class="text-white">Subscribe Now</h3>
+          <form action="#">
+            <div class="input-wrapper">
+              <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Email...">
+              <button type="submit" value="send" class="btn btn-primary">Join</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer content -->
+  <div class="footer bg-footer section border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+          <!-- logo -->
+          <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/logo.png" alt="logo"></a>
+          <ul class="list-unstyled">
+            <li class="mb-2">23621 15 Mile Rd #C104, Clinton MI, 48035, New York, USA</li>
+            <li class="mb-2">+1 (2) 345 6789</li>
+            <li class="mb-2">+1 (2) 345 6789</li>
+            <li class="mb-2">contact@yourdomain.com</li>
+          </ul>
+        </div>
+        <!-- company -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">COMPANY</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="about.html">About Us</a></li>
+            <li class="mb-3"><a class="text-color" href="teacher.html">Our Teacher</a></li>
+            <li class="mb-3"><a class="text-color" href="contact.html">Contact</a></li>
+            <li class="mb-3"><a class="text-color" href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <!-- links -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">LINKS</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="courses.html">Courses</a></li>
+            <li class="mb-3"><a class="text-color" href="event.html">Events</a></li>
+            <li class="mb-3"><a class="text-color" href="gallary.html">Gallary</a></li>
+            <li class="mb-3"><a class="text-color" href="faqs.html">FAQs</a></li>
+          </ul>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <!-- copyright -->
+  <div class="copyright py-4 bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 text-sm-left text-center">
+          <p class="mb-0">Copyright
+            <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 
+            © themefisher</p>
+        </div>
+        <div class="col-sm-5 text-sm-right text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-facebook text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-twitter-alt text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-linkedin text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- venobox popup -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- filter -->
+<script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+<script src="plugins/google-map/gmap.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
